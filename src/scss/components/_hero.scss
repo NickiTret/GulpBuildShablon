@@ -1,0 +1,114 @@
+.main-section {
+    position: relative;
+    min-width: 1240px;
+    margin: 0 auto;
+    @include mobile {
+        min-width: 480px;
+    }
+}
+
+.section__title {
+    text-align: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #181A19;
+    @include mobile {
+        max-width: 100%;
+        min-width: none;
+        line-height: 1;
+    }
+}
+
+.wrapper-secion {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../img/bg-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 576px;
+    margin-left: -120px;
+    @include mobile {
+        flex-direction: column;
+        max-height: none;
+        margin-left: 0;
+        background-position: center;
+    }
+}
+
+.banner-section {
+    position: relative;
+}
+
+.banner-section img {
+    width: 100%;
+}
+
+.number-section__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    @include mobile {
+        margin-top: 57px;
+        margin-left: 57px;
+    }
+}
+
+.number-section__item {
+    display: flex;
+    flex-direction: row;
+    max-width: 450px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 241px;
+    align-items: center;
+    padding-right: 30px;
+    max-height: 70px;
+    &:not(:last-child) {
+        margin-bottom: 65px;
+    }
+    @include mobile {
+        margin-bottom: 75px;
+    }
+}
+
+.img__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #923DA0;
+    margin-left: -75px;
+    min-width: 130px;
+}
+
+.number__item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 60px;
+    color: #923DA0;
+    margin-left: 32px;
+    margin-right: 16px;
+}
+
+.text__item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #181A19;
+}

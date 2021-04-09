@@ -10,10 +10,15 @@ html {
 }
 
 body {
+    overflow-anchor: none;
     margin: 0;
-    font-family: "Cormorant", sans-serif;
-    background-color: var(--color-white);
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
     font-weight: 500;
+    min-width: 1240px;
+    @include mobile {
+        min-width: 578px;
+    }
 }
 
 img {
@@ -33,6 +38,18 @@ ul {
 .is-outer {
     position: relative !important; // stylelint-disable-line declaration-no-important
     left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
 
 .site-container {
@@ -60,26 +77,42 @@ ul {
     cursor: pointer;
 }
 
-// .visually-hiden {
-//     @include visually-hidden;
-// }
 .container {
-    width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 80px;
+    @include mobile {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }
 
-.main-text {
-    font-family: var(--font-ralreg);
-    font-size: 14px;
-    line-height: 22px;
-    color: var(--color-text-title);
-}
-
 img {
     width: 100%;
+}
+
+p {
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 6 3 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-last: always;
+    -moz-hyphenate-limit-zone: 8%;
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-last: always;
+    -ms-hyphenate-limit-zone: 8%;
+    hyphens: auto;
 }

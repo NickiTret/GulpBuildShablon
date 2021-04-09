@@ -1,43 +1,120 @@
 <header class="header">
+    <h1 class="visually-hidden">Тестовое задание</h1>
+    <div class="logo-container">
+        <h2 class="logo-container__text">BrightSmile Veneers</h2>
+    </div>
     <div class="container">
-        <div class="header-wrapper">
-            <svg class="header-logo logo">
-        <use xlink:href="img/sprite.svg#Logo"></use>
-            </svg>
-            <svg class="header-logo-shadow">
-                <use xlink:href="img/sprite.svg#Ellipse7"></use>
-                    </svg>
-            <ul class="nav nav-header">
-                <li class="nav-header__item">
-                    <a href="" class="nav-header__link">Каталог</a>
-                </li>
-                <li class="nav-header__item">
-                    <a href="" class="nav-header__link">О нас</a>
-                </li>
-                <li class="nav-header__item">
-                    <a href="" class="nav-header__link">Контакты </a>
-                </li>
-                <li class="nav-header__item">
-                    <a href="" class="nav-header__link">Галлерея</a>
-                </li>
-            </ul>
+        <div class="card">
+            <div class="card-slider">
+                <div class="card-slider__block slider-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/slide1.png" alt="photo slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/slide2.png" alt="photo slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/slide3.png" alt="photo slide">
+                        </div>
 
-            <div class="header-phone">
-                <span class="header-phone__ico"> 
-                <svg class="header-phone__phone">
-                <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-        </span>
-                <a href="tel:+79655698998" class="header-phone__link">+7 (965) 569-89-98</a>
+                    </div>
+                </div>
+                <div class="card-slider__nav slider-nav">
+                    <button class=" swiper-button-prev btn-prev btn-reset">
+							<svg class="btn-prev__ico">
+								<use xlink:href="img/sprite.svg#ap"></use>
+						  </svg>
+						 </button>
+                    <div class="slider-nav__item" tabindex="0"><img src="../img/slide1.png" alt="photo slide"></div>
+                    <div class="slider-nav__item" tabindex="0"><img src="../img/slide2.png" alt="photo slide"></div>
+                    <div class="slider-nav__item" tabindex="0"><img src="../img/slide3.png" alt="photo slide"></div>
+                    <button class=" swiper-button-next btn-next btn-reset">
+							<svg class="btn-next__ico">
+								<use xlink:href="img/sprite.svg#an"></use>
+						  </svg>
+						 </button>
+                </div>
+
             </div>
-            <div class="header-cart">
-                <button class="header-cart__btn btn-reset">
-                <svg class="header-cart__ico">
-                    <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-                <span class="header-cart__number">0</span>
-            </button>
+
+            <div class="card-descreptions">
+                <h2 class="card-descreptions__title">BrightSmile Veneers</h2>
+                <h3 class="card-descreptions__subtitle">Вы будете улыбаться ярко!</h3>
+                <p class="card-descriptions__text">Удобные и практичные виниры по отличной цене!<br/>Оформите заказ прямо сейчас и оплатите товар при<br> получении.</p>
+                <div class="card-info">
+                    <ul class="card-info__raiting">
+                        <li class="card-info__star">
+                            <svg class="card-info__icon">
+								<use xlink:href="img/sprite.svg#star"></use>
+						  </svg>
+                        </li>
+                        <li class="card-info__star">
+                            <svg class="card-info__icon">
+							  <use xlink:href="img/sprite.svg#star"></use>
+						 </svg>
+                        </li>
+                    </ul>
+                    <span id="numberRat" class="info__raiting">2,7</span>
+                    <span id="reviews" class="info__raiting">170 отзывов</span>
+                    <span id="orders" class="info__raiting">302 заказа(ов)</span>
+                </div>
+                <div class="card-delivery">
+                    <div class="card-delivery__box">
+                        <svg class="card-delivery__icon">
+								<use xlink:href="img/sprite.svg#box"></use>
+						  </svg>
+                    </div>
+                    <div class="card-delivery__descr">Бесплатная доставка</div>
+                </div>
+                <div class="card-price">
+                    <div class="card-price-all">
+                        <p class="price__sale">-5%</p>
+                        <p class="old__price">52 €</p><br>
+                        <p class="new__price">49,00 €</p>
+
+                    </div>
+
+                    <div class="card-sale-timer">
+                        <h1 class="countdown-title">Скидка заканчивается через:</h1>
+                        <div id="countdown" class="countdown">
+                            <!-- <div class="countdown-number">
+													<span class="days countdown-time"></span>
+													<span class="countdown-text">Days</span>
+											  </div> -->
+                            <div class="countdown-number">
+                                <span class="hours countdown-time">00</span>
+                                <span class="countdown-text">часы</span>
+                            </div>
+                            <span class="countdown-time">:</span>
+                            <div class="countdown-number">
+                                <span class="minutes countdown-time">00</span>
+                                <span class="countdown-text">минуты</span>
+                            </div>
+                            <span class="countdown-time">:</span>
+                            <div class="countdown-number">
+                                <span class="seconds countdown-time">00</span>
+                                <span class="countdown-text">секунды</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="price__quantity">
+								 Количество:
+								 <div class="btn-colvo">
+									<button class="btn__quantity btn-reset">-</button>
+									<span class="number__quantity">0</span>
+                <button class="btn__quantity-plus btn-reset">+</button>
             </div>
+            </span>
+            <button class="btn__price btn-reset"> Купить сейчас <span class="btn__text">49,00€</span><span class="btn__text_2">98€</span></button>
+
+
+
+
+
         </div>
     </div>
+    </div>
+
 </header>

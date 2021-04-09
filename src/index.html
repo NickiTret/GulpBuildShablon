@@ -8,10 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#111111">
     <title>New site</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+
 </head>
 
 <body>
@@ -19,11 +20,11 @@
         @include('partials/header.html')
 
         <main class="main">
-            @include('partials/hero.html') @include('partials/slider.html') @include('partials/form.html')
+            @include('partials/hero.html')
         </main>
-        @include('partials/footer.html')
+
     </div>
-    <script type="text/javascript" src="./js/main.js"></script>
+
 
 </body>
 
